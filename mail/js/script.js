@@ -16,14 +16,10 @@ submit.addEventListener("click", function() {
     for (let i = 0; i < list.length; i++) {
         const thisElement = list[i];
 
-        
-       
+    
         if (thisElement === mailUser.value) {
           isFound = true;
-          
-        } else {
-            isFound = false;
-        }
+        } 
     }
     
     if (isFound) {
@@ -31,8 +27,8 @@ submit.addEventListener("click", function() {
     } else {
         answer.innerHTML = "mail non corretto";
     }
-})
 
+})
 
 
 

@@ -16,10 +16,14 @@ let victory = false;
 
 if (numberUser > numberComputer) {
     victory = true
+} else if (numberUser === numberComputer) {
+    victory = "";
 }
 
 if (victory) {
     finalMsg.innerHTML = `<strong class="${victory}">YOU ARE THE WINNER</strong>`
-} else {
+} else if (victory === false) {
     finalMsg.innerHTML = `<strong class="${victory}">YOU LOOSE</strong>`
+} else {
+    finalMsg.innerHTML = "TIE"
 }
